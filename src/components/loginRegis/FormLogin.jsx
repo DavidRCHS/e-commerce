@@ -6,18 +6,20 @@ const FormLogin = () => {
   return (
     <div className='yau-form'>
       <h1>Login</h1>
-      <div>
-        <FontAwesomeIcon icon={faEnvelope} />
+      <form className='yau-form-flex'>
+        <div>
+          <FontAwesomeIcon className='FontAwesomeIcon1' icon={faEnvelope} />
 
-        <input type='email' name='email' />
-      </div>
-      <div>
-        <FontAwesomeIcon icon={faLock} />
+          <input type='email' name='email' />
+        </div>
+        <div>
+          <FontAwesomeIcon className='FontAwesomeIcon1' icon={faLock} />
 
-        <input type='password' name='password' />
-      </div>
+          <input type='password' name='password' />
+        </div>
 
-      <input type='submit' value='Inicar Sesión' />
+        <input type='submit' value='Inicar Sesión' />
+      </form>
     </div>
   )
 }

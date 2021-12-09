@@ -10,26 +10,27 @@ import {
 const FormRegister = () => {
   return (
     <div className='yau-form'>
-      <form>
-        <h1>Register</h1>
+      <h1>Register</h1>
+
+      <form className='yau-form-flex'>
         <div>
-          <FontAwesomeIcon icon={faUser} />
+          <FontAwesomeIcon className='FontAwesomeIcon1' icon={faUser} />
 
           <input type='text' name='name' placeholder='First Name' />
         </div>
         <div>
-          <FontAwesomeIcon icon={faUser} />
+          <FontAwesomeIcon className='FontAwesomeIcon1' icon={faUser} />
 
           <input type='text' name='lastname' placeholder='Last Name' />
         </div>
 
         <div>
-          <FontAwesomeIcon icon={faCalendarDay} />
+          <FontAwesomeIcon className='FontAwesomeIcon1' icon={faCalendarDay} />
 
           <input type='date' name='lastname' />
         </div>
         <div>
-          <FontAwesomeIcon icon={faVenusMars} />
+          <FontAwesomeIcon className='FontAwesomeIcon1' icon={faVenusMars} />
 
           <select>
             <option disabled selected>
@@ -40,13 +41,24 @@ const FormRegister = () => {
           </select>
         </div>
         <div>
-          <FontAwesomeIcon icon={faEnvelope} />
+          <FontAwesomeIcon className='FontAwesomeIcon1' icon={faEnvelope} />
           <input type='email' name='email' placeholder='Email' />
         </div>
         <div>
-          <FontAwesomeIcon icon={faLock} />
+          <FontAwesomeIcon className='FontAwesomeIcon1' icon={faLock} />
 
           <input type='password' name='email' placeholder='password' />
+        </div>
+        <div>
+          <FontAwesomeIcon className='FontAwesomeIcon1' icon={faLock} />
+
+          <input
+            type='password'
+            name='email'
+            placeholder='Confirm Password
+
+'
+          />
         </div>
 
         <input type='submit' value='Inicar Sesión' />
