@@ -9,7 +9,7 @@ export default function ListProducts() {
     return (
         <div>
         {context.listProducts.map((product) => (
-            //se esta validando de que la imagen que sea mayor a 15 
+            //se esta validando de que la imagen que sea mayor a 15
           <>
           
               {product.image && (
