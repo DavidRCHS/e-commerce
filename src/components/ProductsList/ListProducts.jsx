@@ -8,11 +8,28 @@ export default function ListProducts() {
     
     return (
         <div>
-            {context.listProducts.map((product) =>(
-                //<p key={product.id} onclick={()=>context.setProductActual(product)}>{product.product_name}</p>
-                <Product product_name={product.product_name} description={product.description} image={product.image} price={product.price} onClick={()=>context.setProductActual(product)}/>
-             )) }
+        {context.listProducts.map((product) => (
+            //se esta validando de que la imagen que sea mayor a 15 
+          <>
+          
+              {product.image && (
+            <Product
+              product_name={product.product_name}
+              description={product.description}
+              image={
+                product.image.length > 15
+                  ? product.image
+                  : 'https://thumbs.dreamstime.com/z/marco-de-la-foto-del-avatar-del-perfil-en-fondo-abstracto-46377623.jpg'
+              }
+              price={product.price}
+              onClick={() => context.setProductActual(product)}
+            />
+          )}
 
-        </div>
+          </>
+        ))}
+      </div>
+  
+
     );
 }

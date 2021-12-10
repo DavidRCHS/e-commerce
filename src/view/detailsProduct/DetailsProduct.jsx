@@ -8,6 +8,7 @@ export default function DetailsProduct(){
         <h3>Component DetailsProduct</h3>
         <p>{context.productActual.skun}</p>
         <p>{context.productActual.brand}</p>
+        
         </div>
     )
 }
