@@ -7,54 +7,80 @@ import {
   faCalendarDay,
   faVenusMars,
 } from '@fortawesome/free-solid-svg-icons'
-const FormRegister = () => {
+
+const FormRegister = ({ handleInput, handleSubmit, inputs }) => {
   return (
     <div className='yau-form'>
       <h1>Register</h1>
 
-      <form className='yau-form-flex'>
+      <form className='yau-form-flex' onSubmit={handleSubmit}>
         <div>
           <FontAwesomeIcon className='FontAwesomeIcon1' icon={faUser} />
 
-          <input type='text' name='name' placeholder='First Name' />
+          <input
+            type='text'
+            name='name'
+            placeholder='First Name'
+            onChange={handleInput}
+          />
         </div>
         <div>
           <FontAwesomeIcon className='FontAwesomeIcon1' icon={faUser} />
 
-          <input type='text' name='lastname' placeholder='Last Name' />
+          <input
+            type='text'
+            name='lastname'
+            placeholder='Last Name'
+            onChange={handleInput}
+          />
         </div>
 
         <div>
           <FontAwesomeIcon className='FontAwesomeIcon1' icon={faCalendarDay} />
 
-          <input type='date' name='lastname' />
+          <input type='date' name='birthday' onChange={handleInput} />
         </div>
         <div>
           <FontAwesomeIcon className='FontAwesomeIcon1' icon={faVenusMars} />
 
-          <select>
+          <select onChange={handleInput} name='gender'>
             <option disabled selected>
               Seleccione Genero
             </option>
-            <option>Masculino</option>
-            <option>Femenino</option>
+            <option value='M'>Masculino</option>
+            <option value='F'>Femenino</option>
           </select>
         </div>
         <div>
-          <FontAwesomeIcon className='FontAwesomeIcon1' icon={faEnvelope} />
-          <input type='email' name='email' placeholder='Email' />
-        </div>
-        <div>
-          <FontAwesomeIcon className='FontAwesomeIcon1' icon={faLock} />
-
-          <input type='password' name='email' placeholder='password' />
+          <FontAwesomeIcon
+            className='FontAwesomeIcon1'
+            icon={faEnvelope}
+            onChange={handleInput}
+          />
+          <input
+            type='email'
+            onChange={handleInput}
+            name='email'
+            placeholder='Email'
+          />
         </div>
         <div>
           <FontAwesomeIcon className='FontAwesomeIcon1' icon={faLock} />
 
           <input
             type='password'
-            name='email'
+            onChange={handleInput}
+            name='password'
+            placeholder='password'
+          />
+        </div>
+        <div>
+          <FontAwesomeIcon className='FontAwesomeIcon1' icon={faLock} />
+
+          <input
+            onChange={handleInput}
+            type='password'
+            name='ConfirmPassword'
             placeholder='Confirm Password
 
 '
