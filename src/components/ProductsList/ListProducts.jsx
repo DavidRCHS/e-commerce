@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react'
 
 import { useProductContext } from '../../context/productContext'
 import Product from '../../view/product/Product'

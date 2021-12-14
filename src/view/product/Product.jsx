@@ -1,21 +1,29 @@
 import React from "react";
-import "./product.css";
+import '../product/product.css';
+
+
 export default function Product({
- product_name, description,price,image,
+
+  product_name,price,image
+
 }) {
   return (
-    <div className="product-container">
-      <div className="product-row">
-        <div className="product">
-          <img src={image} alt="product" />
-          <h3>{product_name}</h3>
-          
+   
+    <main className="padding">
+      <div className="product">
+        <div className="div-product">
+          <img className="imagen" src={image} alt="Product"></img>
         </div>
-        <div className="product-data">
-          <p className="product-price">{price}</p>
-          <p className="product-description">{description}</p>
-          </div>
+        <div className="nombre">
+          <h4>{product_name}</h4>
+        </div>
+        <div className="precio"> $ {price}</div>
+        <a href=" ">  Detalles .. </a>
+     
+        <button className="btn btn-primary" ><h2>Comprar</h2></button>
       </div>
-    </div>
-  );
+    </main>
+  )
+
+  
 }
