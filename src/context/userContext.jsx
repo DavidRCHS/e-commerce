@@ -4,7 +4,7 @@ const UserContext = React.createContext()
 
 const UserProvider = (props) => {
   const [usuarioActual, setUsuarioActual] = useState()
-  const token = window.localStorage.getItem('token') 
+  const token = window.localStorage.getItem('token')
 
   useEffect(() => {
     if (token) {

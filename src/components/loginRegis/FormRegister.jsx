@@ -8,7 +8,7 @@ import {
   faVenusMars,
 } from '@fortawesome/free-solid-svg-icons'
 
-const FormRegister = ({ handleInput, handleSubmit, inputs }) => {
+const FormRegister = ({ handleInput, handleSubmit, firstNameError }) => {
   return (
     <div className='yau-form'>
       <h1>Register</h1>
@@ -23,6 +23,7 @@ const FormRegister = ({ handleInput, handleSubmit, inputs }) => {
             placeholder='First Name'
             onChange={handleInput}
           />
+          <FontAwesomeIcon className='FontAwesomeIcon1' icon={faUser} />
         </div>
         <div>
           <FontAwesomeIcon className='FontAwesomeIcon1' icon={faUser} />
@@ -33,6 +34,7 @@ const FormRegister = ({ handleInput, handleSubmit, inputs }) => {
             placeholder='Last Name'
             onChange={handleInput}
           />
+          <FontAwesomeIcon className='FontAwesomeIcon1' icon={faUser} />
         </div>
 
         <div>

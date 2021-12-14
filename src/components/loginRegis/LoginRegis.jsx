@@ -4,9 +4,8 @@ import Imagen from '../../assets/img/imgLogin.jpg'
 import ImagenL from '../../assets/img/login.svg'
 import useForm from '../../hooks/useForm'
 
-const LoginRegis = ({ Component, setData }) => {
-  const { inputs, handleInput, handleSubmit } = useForm('', {})
-
+const LoginRegis = ({ Component, postsesion, firstNameError }) => {
+  const { inputs, handleInput, handleSubmit } = useForm(postsesion, {})
   return (
     <>
       <div className='login'>
@@ -16,6 +15,7 @@ const LoginRegis = ({ Component, setData }) => {
             handleInput={handleInput}
             handleSubmit={handleSubmit}
             inputs={inputs}
+            firstNameError={firstNameError}
           />
         </div>
       </div>
