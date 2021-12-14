@@ -10,19 +10,18 @@ export default function Product({
   return (
    
     <main className="padding">
-    <div className="product">
-      <div className="div-product">
-        <img className="imagen" src={image} alt="Product"></img>
+      <div className="product">
+        <div className="div-product">
+          <img className="imagen" src={image} alt="Product"></img>
         </div>
         <div className="nombre">
           <h4>{product_name}</h4>
         </div>
-        <div className="precio"> $
-          {price}
-          </div>
+        <div className="precio"> $ {price}</div>
+        <a href=" ">  Detalles .. </a>
      
-    <button className="btn btn-primary" ><h2>Comprar</h2></button>
-    </div>
+        <button className="btn btn-primary" ><h2>Comprar</h2></button>
+      </div>
     </main>
   )
 
