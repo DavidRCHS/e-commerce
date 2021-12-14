@@ -4,7 +4,11 @@ const Home = () => {
   return <div>Desde el home
     
   <ListProducts/>
+  
   </div>
+   
+  
+
 }
 
 export default Home
