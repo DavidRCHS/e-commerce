@@ -3,4 +3,11 @@ export const values = {
     message: '',
     icon: false,
   },
+
+  typeAlert: {
+    success: 'success',
+    info: 'info',
+    warning: 'warning',
+    error: 'error',
+  },
 }

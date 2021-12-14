@@ -5,6 +5,9 @@
 .yau-form h1 {
   text-align: center;
 }
+.yauerror {
+  color: red;
+}
 
 .container-login {
   background-color: white;
@@ -27,23 +30,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.8rem;
-}
-.yau-form-flex input,
-select {
-  min-width: 23rem;
-  border: none;
-  background: transparent;
-  outline: none;
-  margin-left: 1.3rem;
+  gap: 1.2rem;
 }
 
-.yau-form-flex div {
+.yau-form-flex .input,
+select {
   background-color: white;
-  padding: 0.5rem;
-  min-width: 28rem;
+  /* padding: 0.5rem;
+  min-width: 15rem; */
+  width: 32rem;
   border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+
+  box-shadow: 1px 2px 3px 2px #c0c0c0;
 }
+
 .FontAwesomeIcon1 {
   color: skyblue;
   margin-left: 0.3rem;
