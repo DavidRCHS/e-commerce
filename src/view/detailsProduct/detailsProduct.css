@@ -21,10 +21,12 @@ h4{
     color: #8d202a;
     font-size: 50px;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 400;
     border: sienna 5px ridge;
-    width: 700px;
-    margin: 50px 10px 5px 400px;
+     width: 700px; 
+    margin: 50px 10px 5px 550px;
+ 
+    justify-content: flex-end;
 }
 
 
@@ -40,11 +42,11 @@ h4{
 }
 #detalledescription{
     display: block;
-    width: 650px;
-    padding: 20px;
-    text-align: center;
-    padding: 2px 50px;
-    margin-bottom: 60px;
+    width: 300px;
+    padding: 0px;
+    text-align: center; 
+    padding: 0px; 
+ margin-bottom: 0px;
 }
 #detalleskun{
     display:block;
@@ -62,10 +64,12 @@ h4{
 
 
 #detallesimg{
-    width: 550px;
+    width: 400px;
     display: inline-block;
     margin: 10px;
-    border-radius: 50%;
+    border-radius: 10%;
+
+    
 }
 
 
@@ -74,5 +78,7 @@ h4{
     margin-top: 80px;
 }
 #detalleDivDerecha{
-    display: inline-block;
+    margin-top: 240px;
+    float: right;
+   
 }

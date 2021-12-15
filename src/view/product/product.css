@@ -13,24 +13,28 @@
   max-width: 120rem;
   width: 85%;
   margin: 0 auto;
+  margin-top: 50px;
+  
 }
 .jul_flex_product {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(218 153 108 / 51%);
+ background-color:#1790ff3b;
   border-radius: 20px;
   width: 300px;
   padding-bottom: 28px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+ 
 }
 .jul_grid-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
+
 }
 /* 
 .main {
@@ -59,14 +63,18 @@
   height: 250px;
   border-radius: 10px;
 
-  -webkit-transition: all 1s ease;
 }
 
-/* .imagen:hover {
-  height: 280px;
-  width: 300px;
-  margin-left: +50px;
-} */
+.jul_flex_product:hover {
+  
+  transform: translate(0,-12px);
+    -webkit-transform: translate(0,-12px);
+    -o-transform: translate(0,-12px); 
+    -moz-transform: translate(0,-12px);
+
+
+ 
+} 
 
 .nombre {
   text-align: center;
@@ -79,11 +87,16 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+ 
+
 }
 
 h4 {
   width: 250px;
   margin: 10px;
+  font-family: "Roboto";
+ 
+
 }
 
 a {
@@ -91,6 +104,16 @@ a {
   display: block;
 }
 
+h3{
+  color: white;
+  font-family: "Roboto";
+
+  border-radius:5px 10x 20px 15px;
+  
+ 
+
+  
+}
 /* html {
   box-sizing: border-box;
   font-size: 90%;
