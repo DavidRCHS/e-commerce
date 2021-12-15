@@ -67,9 +67,12 @@ const Login = () => {
           axios
             .get('https://ecomerce-master.herokuapp.com/api/v1/user/me', config)
             .then((response) => {
+              console.log(response)
               if (response.status === 200) {
                 context.setUsuarioActual(response.data)
                 console.log(response.data)
+              } else {
+                console.log(response.message)
               }
             })
           history.push('/')
