@@ -1,0 +1,78 @@
+*{
+}
+
+
+#detalles{
+    text-align: center;
+    font-family: poppins;
+    font-size: 150%;
+    padding: 5px 30px;
+    background: linear-gradient(-120deg, white 50%, rgb(218 153 108 / 51%) 50%);
+    height: 100%;
+}
+
+h4{
+    text-shadow: seashell 3px;
+    font-size: 130%;
+    margin: 0%;
+}
+
+#ComponentDetailsProduct{
+    color: #8d202a;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border: sienna 5px ridge;
+    width: 700px;
+    margin: 50px 10px 5px 400px;
+}
+
+
+#detallescategory{
+    display: block;
+    width: 500px;
+    padding: 20px;
+    text-align: center; 
+    text-shadow: blanchedalmond 2px;
+    padding: 2px 50px;
+    margin-bottom: 80px;
+
+}
+#detalledescription{
+    display: block;
+    width: 650px;
+    padding: 20px;
+    text-align: center;
+    padding: 2px 50px;
+    margin-bottom: 60px;
+}
+#detalleskun{
+    display:block;
+    padding: 2px 50px;
+    margin-bottom: 60px;
+}
+#detallebrand{
+    display: block;
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+    padding: 2px 50px;
+    margin-bottom: 60px;
+}
+
+
+#detallesimg{
+    width: 550px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+
+#detalleDivIzquierda{
+    display: inline-block;
+    margin-top: 80px;
+}
+#detalleDivDerecha{
+    display: inline-block;
+}

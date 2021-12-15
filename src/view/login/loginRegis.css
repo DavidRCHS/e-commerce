@@ -1,0 +1,51 @@
+.login {
+  background-color: #8ecae6;
+  height: 100vh;
+}
+.yau-form h1 {
+  text-align: center;
+}
+.yauerror {
+  color: red;
+}
+
+.container-login {
+  background-color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  top: 5rem;
+}
+.yau-form {
+  background-color: cadetblue;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  width: 45rem;
+}
+.imgLogin {
+  width: 50rem;
+}
+.yau-form-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.yau-form-flex .input,
+select {
+  background-color: white;
+  /* padding: 0.5rem;
+  min-width: 15rem; */
+  width: 32rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+
+  box-shadow: 1px 2px 3px 2px #c0c0c0;
+}
+
+.FontAwesomeIcon1 {
+  color: skyblue;
+  margin-left: 0.3rem;
+}
