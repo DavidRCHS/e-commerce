@@ -1,0 +1,98 @@
+section
+{
+padding: 0rem 9%;
+}
+
+#home-box
+{
+    background: url(./imagenes/home-bg-1.jpg) no-repeat;
+}
+
+.home
+{
+    padding: 0;
+}
+
+.btn
+{
+    margin-top: 1rem;
+    display: inline-block;
+    border: .2rem solid green;
+    color: green;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.514);
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    text-decoration: none;
+}
+.btn:hover
+{
+    background: black;
+    color: white;
+}
+
+.box{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover !important;
+    background-position: center !important;
+    justify-content: flex-end;
+    padding: 2rem 9%;
+}
+
+.box .content
+{
+    width: 30rem;
+}
+
+.box .content span{
+    font-size: 2rem;
+    color: black;
+}
+
+.content h3
+{
+    font-size: 4rem;
+    color: green;
+    padding-top: .5rem;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.content p
+{
+    line-height: 2;
+    color: black;
+    font-size: 1.5rem;
+    padding:1rem 0;
+    margin: auto;
+}
+
+@media (max-width:1200px) {
+    section
+    {
+     padding: 0rem 2rem;
+    }
+    
+    .home .box
+    {
+        padding: 2rem;
+        justify-content: center;
+        background-position: right !important;
+    }
+    .content
+    {
+        text-align: center;
+    }
+
+    .content span
+    {
+        font-size: 1rem;
+    }
+
+    .content h3
+    {
+        font-size: 3rem;
+    }
+}
