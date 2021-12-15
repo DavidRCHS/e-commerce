@@ -1,4 +1,3 @@
-
 import { useProductContext } from '../../context/productContext'
 import Product from '../../view/product/Product'
 export default function ListProducts() {
@@ -14,6 +13,7 @@ export default function ListProducts() {
               key={i}
               product_name={product.product_name}
               description={product.description}
+              id={product._id}
               image={
                 product._id == '605406b3078d290017f82da0' ||
                 product._id == '606655d64220db0017c75ef8' ||

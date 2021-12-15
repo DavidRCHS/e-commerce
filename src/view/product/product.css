@@ -1,33 +1,31 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    margin: 50px;
-    background-color: #D6E8EE;
+/* body {
+  margin: 50px;
+  background-color: #d6e8ee;
+} */
+
+.main {
+  width: 80%;
+  float: left;
+  max-width: 100%;
+  border-radius: 10px black solid;
 }
 
-.main{  
-    width: 80%;
-    float: left;
-    max-width: 100%;
-    border-radius: 10px black solid;
-    
-  }
-  
-.padding{
-    text-align: center;
-    grid-template-columns: 90px 90px 90px;
-    grid-template-rows: 160px 160px;
-    float: right;
-    margin-top: 20px;
-    margin-bottom: 25px;
-    height: 500px;
-    }
-  
+.padding {
+  text-align: center;
+  grid-template-columns: 90px 90px 90px;
+  grid-template-rows: 160px 160px;
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  height: 500px;
+}
+
 .imagen {
   width: 250px;
   margin: 18px;
@@ -37,48 +35,41 @@ body{
   border-bottom: 50px;
   height: 250px;
   border-radius: 10px;
- 
+
   -webkit-transition: all 1s ease;
-
 }
 
-img:hover {
-    height: 280px;
-    width: 300px;
-    margin-left: +50px;
+.imagen:hover {
+  height: 280px;
+  width: 300px;
+  margin-left: +50px;
 }
 
-
-
-
-
-.nombre{ 
-    text-align: center;
+.nombre {
+  text-align: center;
 }
 .button-btn {
-   
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
-h4{
-    width: 250px;
-    margin: 10px;
+h4 {
+  width: 250px;
+  margin: 10px;
 }
 
-a{
-    text-decoration: blink;
-    display: block;
+a {
+  text-decoration: blink;
+  display: block;
 }
 
-
-html {
-    box-sizing: border-box;
-    font-size: 90.0%; 
-    font-family: 'Comfortaa';
-}
+/* html {
+  box-sizing: border-box;
+  font-size: 90%;
+  font-family: 'Comfortaa';
+} */
