@@ -1,5 +1,3 @@
-*{
-}
 
 
 #detalles{
@@ -7,27 +5,25 @@
     font-family: poppins;
     font-size: 150%;
     padding: 5px 30px;
-    background: linear-gradient(-120deg, white 50%, rgb(218 153 108 / 51%) 50%);
-    height: 100%;
+    background: linear-gradient(-120deg, white 50%, #002c3e 50%);
+    height: 100vh;
 }
 
 h4{
-    text-shadow: seashell 3px;
     font-size: 130%;
     margin: 0%;
+    color: #f7f8f3;
 }
 
 #ComponentDetailsProduct{
-    color: #8d202a;
+    color: #002c3e;
     font-size: 50px;
     text-transform: uppercase;
     font-weight: 400;
-    border: sienna 5px ridge;
-     width: 700px; 
-    margin: 50px 10px 5px 550px;
- 
-    justify-content: flex-end;
-}
+    width: 700px; 
+    margin: 70px 10px 5px 650px;
+
+ }
 
 
 #detallescategory{
@@ -35,10 +31,9 @@ h4{
     width: 500px;
     padding: 20px;
     text-align: center; 
-    text-shadow: blanchedalmond 2px;
     padding: 2px 50px;
     margin-bottom: 80px;
-
+    color: #f7f8f3;
 }
 #detalledescription{
     display: block;
@@ -46,12 +41,14 @@ h4{
     padding: 0px;
     text-align: center; 
     padding: 0px; 
- margin-bottom: 0px;
+    margin-bottom: 0px;
+    color: #f7f8f3;
 }
 #detalleskun{
     display:block;
     padding: 2px 50px;
     margin-bottom: 60px;
+    color: #f7f8f3;
 }
 #detallebrand{
     display: block;
@@ -60,16 +57,16 @@ h4{
     text-align: center;
     padding: 2px 50px;
     margin-bottom: 60px;
+    color: #f7f8f3;
 }
 
 
 #detallesimg{
-    width: 400px;
+    width: 500px;
     display: inline-block;
-    margin: 10px;
+    margin: 10px 90px 10px 5px;;
     border-radius: 10%;
-
-    
+   
 }
 
 
@@ -78,7 +75,7 @@ h4{
     margin-top: 80px;
 }
 #detalleDivDerecha{
-    margin-top: 240px;
+    margin-top: 140px;
     float: right;
    
 }
