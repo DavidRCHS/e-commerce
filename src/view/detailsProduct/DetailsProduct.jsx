@@ -20,8 +20,9 @@ export default function DetailsProduct() {
 
   return (
     <div id='detalles'>
-      <h3 id='ComponentDetailsProduct'> <strong> PRODUCTS DETAILS </strong> </h3>      {productounico.map((productos) => (
-        <>
+      <h3 id='ComponentDetailsProduct'> <strong> PRODUCTS DETAILS </strong> </h3> 
+           {productounico.map((productos) => (
+        < >
         <div id='detalleDivIzquierda'>
           <h4> <strong> CATEGORY </strong> </h4>
           <p id='detallescategory'>{productos.category}</p>
@@ -32,7 +33,8 @@ export default function DetailsProduct() {
           <p id='detallebrand'>{productos.brand}</p>
         </div>
         <div id='detalleDivDerecha'>
-          <img id='detallesimg' src={productos.image} alt={productos._id} />
+          <img id='detallesimg' src={productos.image} alt={productos._id} onError={(e)=>{e.target.onerror = null; e.target.src="https://i.pinimg.com/originals/ee/f3/f4/eef3f4858339074c0bba500abfbf6850.jpg"}}/>
+        
         </div>
       </>
       ))}
