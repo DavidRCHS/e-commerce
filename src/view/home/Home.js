@@ -1,5 +1,5 @@
 import React from 'react'
-import "../components/Home/home.css";
+import "../../components/Home/home.css";
 
 export default function home() {
     return (
@@ -13,7 +13,7 @@ export default function home() {
                                 <span>Never Stop</span>
                                 <h3>Explora</h3>
                                 <p>Explora nuestra amplia seleccion de prendas y articulos de viaje. Todo al alcance de tus manos</p>
-                                <a href='/' className='btn'>Comencemos</a>
+                                <a href='/' className='home-btn'>Comencemos</a>
                             </div>
                         </div>
                     </div>

@@ -43,7 +43,7 @@
   
   .header .logo {
     margin-right: auto;
-    font-size: 1.5rem;
+    font-size: 3rem;
     color: #10221b;
     font-weight: bolder;
     text-decoration: none;
@@ -56,7 +56,7 @@
   
   .header .navbar a {
     margin-left: 2rem;
-    font-size: 1rem;
+    font-size: 2rem;
     color: #10221b;
     text-decoration: none;
   }
@@ -74,7 +74,7 @@
   
   .header .icons a,
   .header .icons div {
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-left: 2rem;
     cursor: pointer;
     color: #10221b;
@@ -175,6 +175,11 @@
   
   .search-form form label:hover {
     color: #219150;
+  }
+
+  #i-busqueda
+  {
+    display: none;
   }
 
   @media (max-width: 991px) {

@@ -32,7 +32,7 @@ export default function DetailsProduct() {
           <p id='detallebrand'>{productos.brand}</p>
         </div>
         <div id='detalleDivDerecha'>
-          <img id='detallesimg' src={productos.image} alt={productos._id} />
+          <img id='detallesimg' src={productos.image} alt={productos._id} onError={(e)=>{e.target.onerror = null; e.target.src="https://i.pinimg.com/originals/ee/f3/f4/eef3f4858339074c0bba500abfbf6850.jpg"}}/>
         </div>
       </>
       ))}

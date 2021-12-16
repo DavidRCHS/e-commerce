@@ -6,7 +6,7 @@ export default function Product({ product_name, price, image, id }) {
   return (
     <div className='jul_flex_product'>
       <div className='div-product'>
-        <img className='imagen' src={image} alt='Product'></img>
+        <img className='imagen' src={image} alt='Product' onError={(e)=>{e.target.onerror = null; e.target.src="https://i.pinimg.com/originals/ee/f3/f4/eef3f4858339074c0bba500abfbf6850.jpg"}}></img>
       </div>
       <div className='nombre'>
         <h4>{product_name}</h4>
