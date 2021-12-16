@@ -14,8 +14,12 @@ export default function useForm(callback, data) {
   }
 
   const handleSubmit = (event) => {
+    const { name, value } = event.target
+
     event.preventDefault()
     callback(inputs)
+
+    setInputs({ [name]: '' })
   }
 
   return {

@@ -4,6 +4,8 @@ import Login from '../view/login'
 import Register from '../view/register'
 import ListProducts from '../components/ProductsList'
 import Pages from './pages'
+import Admin from '../view/admin/Admin'
+import DashBoardAdmin from './DashBoardAdmin'
 
 const Routes = () => {
   return (
@@ -11,6 +13,7 @@ const Routes = () => {
       <Switch>
         <Route exact path='/Login' component={Login} />
         <Route exact path='/registro' component={Register} />
+        <Route path='/admin' component={DashBoardAdmin} />
         <Route path='/' component={Pages} />
       </Switch>
     </Router>
