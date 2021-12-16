@@ -49,3 +49,8 @@ select {
   color: skyblue;
   margin-left: 0.3rem;
 }
+
+.tableImg {
+  width: 25rem;
+  height: 16rem;
+}

@@ -59,6 +59,7 @@ const Login = () => {
         .post('https://ecomerce-master.herokuapp.com/api/v1/login', datos)
         .then((response) => {
           window.localStorage.setItem('token', response.data.token)
+
           const config = {
             headers: {
               Authorization: `JWT ${response.data.token}`,
@@ -67,15 +68,18 @@ const Login = () => {
           axios
             .get('https://ecomerce-master.herokuapp.com/api/v1/user/me', config)
             .then((response) => {
-              console.log(response)
               if (response.status === 200) {
                 context.setUsuarioActual(response.data)
                 console.log(response.data)
-              } else {
-                console.log(response.message)
               }
             })
           history.push('/')
+          if (response.data.role == 'ADMIN') {
+            history.push('/Admin')
+          } else {
+            history.push('/')
+          }
+          console.log(response.data.role)
 
           console.log(response.data)
         })
@@ -87,7 +91,7 @@ const Login = () => {
         })
         .catch((ex) => {
           setAlertSupport({
-            message: ex.message,
+            message: ex.response.data.message,
             type: values.typeAlert.error,
           })
         })

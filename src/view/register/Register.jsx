@@ -94,6 +94,7 @@ const Register = () => {
   }
 
   const registerUser = (inputs) => {
+    console.log(inputs)
     if (validation(inputs)) {
       setLoaded(false)
 
@@ -130,7 +131,7 @@ const Register = () => {
         .catch((ex) => {
           console.log(ex)
           setAlertSupport({
-            message: ex.message,
+            message: 'el correo electronico ya exite',
             type: values.typeAlert.error,
           })
         })
