@@ -16,13 +16,14 @@ export default function Product({ product_name, price, image, id }) {
      
 
       <Link to={`/detalleProducto/${id}`}> Detalles .. </Link>
-
-      <button id="agregar" className='btn btn-primary'>
-        <h2  >Agregar</h2>
-      </button>
+    <form action="/carritoProduct" method="GET" >
+      <input type="submit" id="agregar" className='btn btn-primary' value="Agregar" />
+       
       <div>
-      <input id="input-product" type="number" text={product_name} placeholder="Agregar cantidad"/>
+      <input id="input-product"  type="number" name="cantidad"  placeholder=""/>
+      <input id="id-product"  type="hidden" name="identificador" value={id} placeholder=""/>
       </div>
+      </form>
     </div>
   )
 }
