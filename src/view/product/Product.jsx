@@ -24,6 +24,7 @@ export default function Product({ product_name, price, image, id }) {
             var carrito=[];
             carrito.push({"id": identificador, "cantidad": cantidad});
             window.localStorage.setItem('carrito',JSON.stringify(carrito))
+            alert('Se agrego al carrito')
           
         }else{
             var carritoText= window.localStorage.getItem('carrito');
@@ -33,10 +34,9 @@ export default function Product({ product_name, price, image, id }) {
             carrito.push(products);
             window.localStorage.setItem('carrito',JSON.stringify(carrito))
             console.log(carrito);
-           
+            alert('Se agrego al carrito')
         }
-          alert(identificador);
-          alert(cantidad);
+         
           ;}}>Agregar</button>
        
       <div>

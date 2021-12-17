@@ -15,7 +15,9 @@ const Navbar = () => {
       <Link to="/" className="logo"><FontAwesomeIcon icon={faHiking} />.NeverStop</Link>
 
       <nav className="navbar">
-          <div id="nav-close" ><FontAwesomeIcon icon={faTimes} /></div>
+          <div id="nav-close" onClick={() => {
+          let navbar = document.querySelector('.header .navbar');
+          navbar.classList.remove('active');}}><FontAwesomeIcon icon={faTimes} /></div>
           <Link to="/">Home</Link>
           <Link to="/productos">Productos</Link>
           <Link to="/contacto">Contacto</Link>
@@ -26,7 +28,7 @@ const Navbar = () => {
           <div id="menu-btn" onClick={() => {
           let navbar = document.querySelector('.header .navbar');
           navbar.classList.add('active');}}><FontAwesomeIcon icon={faBars} /></div>
-          <Link to="/"><FontAwesomeIcon icon={faShoppingCart} /></Link>
+          <Link to="/VerCarrito"><FontAwesomeIcon icon={faShoppingCart} /></Link>
           <div id="search-btn" onClick={() => {
           let searchForm = document.querySelector('.search-form');  
           searchForm.classList.add('active');}}>   
@@ -39,7 +41,7 @@ const Navbar = () => {
           let searchForm = document.querySelector('.search-form');  
           searchForm.classList.remove('active');}}>
             <FontAwesomeIcon icon={faTimes} /></div>
-
+        
       <form action="/buscar" method="GET">
           <input
            type="search" 
