@@ -12,6 +12,8 @@ import {
 } from 'antd'
 import axios from 'axios'
 import useForm from '../../hooks/useForm'
+import withProteccionAdmin from '../../utils/withProteccionAdmin'
+
 const ProductoAdmin = () => {
   const context = useProductContext()
   const [loading, setloading] = useState()
@@ -93,7 +95,7 @@ const ProductoAdmin = () => {
           handleCancel()
           consultarApi()
           setActivo(true)
-          setCategorias('select a')
+          setCategorias('')
         })
         .finally(() => {
           setTimeout(() => {}, 5000)
@@ -172,9 +174,8 @@ const ProductoAdmin = () => {
       <Modal
         title='Nuevo Producto'
         visible={isModalVisible}
-        onOk={postProduct}
+        footer={null}
         onCancel={handleCancel}
-        okText='Guardar'
       >
         {error ? (
           <p className='alerta-error'>Todos los campos son obligatorios</p>
@@ -217,7 +218,7 @@ const ProductoAdmin = () => {
               style={{ width: 250 }}
               onChange={handleChangeCat}
               defaultValue='Selecciona una Categoria'
-              value={categorias && 'Selecciona una Categoria'}
+              value={categorias ? `${categorias}` : 'Selecciona una categoria'}
             >
               {allCategories.map((especialidad, i) => (
                 <Option key={i} value={especialidad}>
@@ -253,7 +254,7 @@ const ProductoAdmin = () => {
               onClick={handleSubmit}
               className='button'
               type='submit'
-              value='Crear cuenta'
+              value='Agregar Producto'
             />
           </Space>
         </form>
@@ -262,4 +263,4 @@ const ProductoAdmin = () => {
   )
 }
 
-export default ProductoAdmin
+export default withProteccionAdmin(ProductoAdmin)

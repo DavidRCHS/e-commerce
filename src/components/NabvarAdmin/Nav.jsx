@@ -13,6 +13,7 @@ import {
   faHome,
 } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
+import withProteccionAdmin from '../../utils/withProteccionAdmin'
 
 const Nav = () => {
   let history = useHistory()
@@ -74,7 +75,9 @@ const Nav = () => {
                   Cerrar Sesion
                 </a>
               )} */}
-              <a className='li-link  '>Cerrar Sesion</a>
+              <Link className='li-link  ' to='/signup'>
+                Cerrar Sesion
+              </Link>
             </div>
           </div>
         </div>
@@ -83,4 +86,4 @@ const Nav = () => {
   )
 }
 
-export default Nav
+export default withProteccionAdmin(Nav)

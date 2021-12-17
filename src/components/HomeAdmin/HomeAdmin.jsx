@@ -1,12 +1,7 @@
 import React from 'react'
 
 const HomeAdmin = () => {
-  return (
-    <div className='info'>
-      hola desde el home FDSAKLJDSKJLDFSKLJFDSKLJFDSLKJFDSF KLL DFSSDF LDSFKSFD
-      KJLFDSLKJFSDLJKFSDLJKSFDLJKFDSFLDSL
-    </div>
-  )
+  return <div className='info'>Hola Admim</div>
 }
 
 export default HomeAdmin

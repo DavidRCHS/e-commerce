@@ -59,6 +59,7 @@ const Login = () => {
         .post('https://ecomerce-master.herokuapp.com/api/v1/login', datos)
         .then((response) => {
           window.localStorage.setItem('token', response.data.token)
+          window.localStorage.setItem('role', response.data.role)
 
           const config = {
             headers: {
