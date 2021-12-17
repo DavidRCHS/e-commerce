@@ -16,14 +16,37 @@ export default function Product({ product_name, price, image, id }) {
      
 
       <Link to={`/detalleProducto/${id}`}> Detalles .. </Link>
-    <form action="/carritoProduct" method="GET" >
-      <input type="submit" id="agregar" className='btn btn-primary' value="Agregar" />
+    
+      <button  id="agregar" className='btn btn-primary' onClick={() => {
+          let cantidad=  document.getElementById(id+"cantidad").value;
+          let identificador= document.getElementById(id+"producto").value;
+          if(window.localStorage.getItem('carrito') == null){
+            var carrito=[];
+            carrito.push({"id": identificador, "cantidad": cantidad});
+            window.localStorage.setItem('carrito',JSON.stringify(carrito))
+            alert('Se agrego al carrito')
+          
+        }else{
+            var carritoText= window.localStorage.getItem('carrito');
+            var carrito = JSON.parse(carritoText);
+            let products = {"id": identificador, "cantidad": cantidad}
+            
+            carrito.push(products);
+            window.localStorage.setItem('carrito',JSON.stringify(carrito))
+            console.log(carrito);
+            alert('Se agrego al carrito')
+        }
+         
+          ;}}>Agregar</button>
        
       <div>
-      <input id="input-product"  type="number" name="cantidad"  placeholder=""/>
-      <input id="id-product"  type="hidden" name="identificador" value={id} placeholder=""/>
+      <input id={id+'cantidad'}  type="number" name="cantidad"  placeholder=""/>
+      <input id={id+'producto'}  type="hidden" name="identificador" value={id} placeholder=""/>
       </div>
-      </form>
+
+      
     </div>
+    
   )
 }
+

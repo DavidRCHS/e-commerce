@@ -1,3 +1,4 @@
+
 section
 {
 padding: 0rem 9%;
@@ -13,7 +14,7 @@ padding: 0rem 9%;
     padding: 0;
 }
 
-.btn
+.home-btn
 {
     margin-top: 1rem;
     display: inline-block;
@@ -25,7 +26,7 @@ padding: 0rem 9%;
     padding: 1rem 3rem;
     text-decoration: none;
 }
-.btn:hover
+.home-btn:hover
 {
     background: black;
     color: white;
@@ -43,7 +44,7 @@ padding: 0rem 9%;
 
 .box .content
 {
-    width: 30rem;
+    width: 50rem;
 }
 
 .box .content span{
